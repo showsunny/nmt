@@ -13,7 +13,7 @@ source run.sh train
 loss图像(本地训练时可以删掉第一行)
 ```bash
 load_ext tensorboard
-tensorboard --logdir runs/nmt_local
+tensorboard --logdir runs/nmt
 ```
 测试
 ```bash
