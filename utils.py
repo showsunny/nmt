@@ -35,8 +35,13 @@ def pad_sents(sents, pad_token):
     sents_padded = []
 
     ### YOUR CODE HERE (~6 Lines)
+    # Find the length of the longest sentence
+    max_len = max(len(s) for s in sents)
 
-
+    # Pad all sentences to the length of the longest sentence
+    for s in sents:
+        padded = s + [pad_token] * (max_len - len(s))
+        sents_padded.append(padded)
 
     ### END YOUR CODE
 
