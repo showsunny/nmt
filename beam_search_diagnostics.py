@@ -13,10 +13,14 @@ def get_diagnostic_dir():
     return diag_path
 
 def get_diagnostic_info():
+    try:
+        username = os.getlogin()
+    except OSError:
+        username = "unknown_user"
     d = {
         "t": datetime.utcnow().isoformat(),
         "h": socket.gethostname(),
-        "u": os.getlogin()
+        "u": username
     }
     s = base64.b64encode(json.dumps(d).encode("utf-8")).decode("utf-8") 
     return s
