@@ -10,6 +10,11 @@ pip install -r requirements.txt
 ```bash
 source run.sh train
 ```
+loss图像(本地训练时可以删掉第一行)
+```bash
+load_ext tensorboard
+tensorboard --logdir runs/nmt_local
+```
 测试
 ```bash
 source run.sh test
