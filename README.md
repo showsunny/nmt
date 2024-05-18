@@ -15,6 +15,7 @@ loss图像(本地训练时可以删掉第一行)
 load_ext tensorboard
 tensorboard --logdir runs/nmt
 ```
+![loss](https://github.com/showsunny/nmt/blob/main/image/lossfig.png)
 在测试集上测试
 ```bash
 source run.sh test
