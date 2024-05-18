@@ -3,6 +3,10 @@ pytorch implementation of neural machine translation with RNNs
 
 pytorch实现基于RNN和注意力机制的机器翻译
 ![model](https://github.com/showsunny/nmt/blob/main/image/model_figure.png)
+# 运行步骤
+克隆本仓库
+```bash
+git clone https://github.com/showsunny/nmt.git
 安装工具包
 ```bash
 pip install -r requirements.txt
@@ -11,7 +15,7 @@ pip install -r requirements.txt
 ```bash
 source run.sh train
 ```
-loss图像(本地训练时可以删掉第一行,如果无法显示图像，下载runs路径下生成的0文件并在本地的conda环境运行)
+loss图像(本地训练时可以删掉第一行,如果无法显示图像，删掉第一行，下载runs路径下生成的0文件并在本地的conda环境运行)
 ```bash
 load_ext tensorboard
 tensorboard --logdir runs/nmt
