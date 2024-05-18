@@ -3,10 +3,11 @@ pytorch implementation of neural machine translation with RNNs
 
 pytorch实现基于RNN和注意力机制的机器翻译
 ![model](https://github.com/showsunny/nmt/blob/main/image/model_figure.png)
-# 运行步骤
+## 运行步骤
 克隆本仓库
 ```bash
 git clone https://github.com/showsunny/nmt.git
+```
 安装工具包
 ```bash
 pip install -r requirements.txt
