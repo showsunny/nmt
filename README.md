@@ -24,7 +24,7 @@ source run.sh test
 翻译一条语句
 ```python
 from nmt_model import NMT
-#from utils import read_sentence
+
 import torch
 import jieba
 
