@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```bash
 source run.sh train
 ```
-loss图像(本地训练时可以删掉第一行,如果无法显示图像，删掉第一行，下载runs路径下生成的0文件并在本地的conda环境运行)
+loss图像(本地训练时可以删掉第一行,如果无法显示图像，删掉第一行，下载runs路径下生成的0文件,将代码中的路径改为0文件所在文件夹(不包括这个文件的文件名)并在本地的conda环境运行)
 ```bash
 load_ext tensorboard
 tensorboard --logdir runs/nmt
