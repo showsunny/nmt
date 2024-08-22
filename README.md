@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 创建自己的词汇表（如果需要用自己的训练集）
 ```bash
-python vocab.py --train-src=zh_en_data/train.zh --train-tgt=zh_en_data/train.en vocab.txt
+python vocab.py --train-src=zh_en_data/train.zh --train-tgt=zh_en_data/train.en vocab.json
 ```
 训练
 ```bash
