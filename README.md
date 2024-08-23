@@ -1,7 +1,9 @@
 # nmt
 pytorch implementation of neural machine translation with RNNs
 
-pytorch实现基于RNN和注意力机制的机器翻译,翻译效果与训练集质量有关
+pytorch实现基于RNN和注意力机制的机器翻译（仅限汉译英）,翻译效果与训练集质量有关
+
+如果有自己的训练集或需要专业领域的翻译，将准备的训练集验证集测试集放在`zh_en_data`目录，全部是txt文件，每行一条语句
 ![model](https://github.com/showsunny/nmt/blob/main/image/model_figure.png)
 ## 运行步骤
 克隆本仓库
