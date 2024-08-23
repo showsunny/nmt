@@ -1,15 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-CS224N 2022-23: Homework 4
-model_embeddings.py: Embeddings for the NMT model
-Pencheng Yin <pcyin@cs.cmu.edu>
-Sahil Chopra <schopra8@stanford.edu>
-Anand Dhoot <anandd@stanford.edu>
-Vera Lin <veralin@stanford.edu>
-Siyan Li <siyanli@stanford.edu>
-"""
+
 
 import torch.nn as nn
 
@@ -35,20 +27,6 @@ class ModelEmbeddings(nn.Module):
         src_pad_token_idx = vocab.src['<pad>']
         tgt_pad_token_idx = vocab.tgt['<pad>']
 
-        ### YOUR CODE HERE (~2 Lines)
-        ### TODO - Initialize the following variables:
-        ###     self.source (Embedding Layer for source language)
-        ###     self.target (Embedding Layer for target langauge)
-        ###
-        ### Note:
-        ###     1. `vocab` object contains two vocabularies:
-        ###            `vocab.src` for source
-        ###            `vocab.tgt` for target
-        ###     2. You can get the length of a specific vocabulary by running:
-        ###             `len(vocab.<specific_vocabulary>)`
-        ###     3. Remember to include the padding token for the specific vocabulary
-        ###        when creating your Embedding.
-        ###
         self.source = nn.Embedding(num_embeddings=len(vocab.src), 
                            embedding_dim=self.embed_size, 
                            padding_idx=src_pad_token_idx)
@@ -61,7 +39,5 @@ class ModelEmbeddings(nn.Module):
         ###     Embedding Layer:
         ###         https://pytorch.org/docs/stable/nn.html#torch.nn.Embedding
         
-
-        ### END YOUR CODE
 
 
